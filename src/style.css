@@ -1,0 +1,15 @@
+.box{
+    width: 270px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    padding: 8px;
+    text-align: center;
+    background-color: skyblue;
+}
+.boxes{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
