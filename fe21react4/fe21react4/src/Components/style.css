@@ -1,0 +1,30 @@
+h1,h3{
+    text-align: center;
+    color: blue;
+}
+p{
+    margin: 0 auto;
+    width: 34ch;
+}
+.header{
+    text-align: center;
+}
+.boxes{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ gap: 10px;
+}
+.box{
+    width: 370px;
+height: 190px;
+    border: 2px solid skyblue;
+    border-radius: 5px;
+    background-color: skyblue;
+    box-shadow: 0 0 15px skyblue;
+    
+}
+.box:hover{
+    transition: all 1s;
+    transform: scale(0.5)
+}
