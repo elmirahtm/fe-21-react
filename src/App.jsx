@@ -4,7 +4,7 @@ const App=()=>{
     return <div className="boxes">
         <Card imagesrc="./photo.png"
         title="kiçik Qruplar"
-        description="Dərslər kiçik qruplarda keçirilir, qrupda 4-7 tələbə olur<"
+        description="Dərslər kiçik qruplarda keçirilir, qrupda 4-7 tələbə olur"
         />
     
         <Card imagesrc="./2..png"
