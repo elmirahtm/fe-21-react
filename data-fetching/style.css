@@ -1,0 +1,49 @@
+*{
+    user-select: none;
+}
+
+body{
+      background-color: #ecdac2;
+}
+.header,main{
+    display: flex;
+    justify-content: space-around;
+  
+}
+h2,span{
+    color: brown;
+    font-family: 'Abril Fatface', serif;
+}
+h1{
+    font-family: 'Abril Fatface', serif;
+    font-size: 30px;
+    margin-top: -20px;
+
+}
+
+span img{
+    object-fit: contain;
+    width: 50px ;
+    height: 50px;
+    border: 2px solid brown;
+    border-radius: 50%;
+    transform: translateY(-60px) translateX(40px);
+    
+}
+h4 a{
+ transform: translateX(670px) translateY(-50px);
+ text-decoration: none;
+ font-size: 10px;
+}
+article h3{
+    width: 93ch;
+    margin: 0 auto;
+} article a{
+    font-size: 7px;
+}
+.box,.box2,.box3,.box4,.box5,.box6,.box7{
+    border: 2px solid  rgb(211, 207, 207);
+    background-color: rgb(211, 207, 207);
+    padding: 8px;
+    width: 600px;
+}

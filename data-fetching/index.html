@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>data-fetching</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <section>
+<div class="header">
+ <h2  >CodePen</h2>
+<span><h2>by</h2> <img src="./img/photo_5463107197337720070_y.jpg" alt=""></span>
+</div>
+<main>
+    <h1>Data-Fetching</h1>
+    
+</main>
+<div><h4><a href=<i class="fa-regular fa-calendar-days" style="color: #0a1019;"></i> DECEMBER 16 , 2023</a></h4></div>
+<article>
+<h3>
+   <div> <h1>Fetch API</h1></div>
+    Fetch API veb serverə HTTP sorğuları (məsələn, GET, POST, PUT və Delete) etməyə imkan verən xüsusiyyətdir. O, müasir brauzerlərdə quraşdırılıb.Burada siz şəbəkə sorğularıda edə bilərsiniz.
+Məsələn, şəbəkə sorğusu dedikdə:<br>
+<a href=<i class="fa-solid fa-circle" style="color: #080c11;"></i></a> Sifariş vermək, <br>
+<a href=<i class="fa-solid fa-circle" style="color: #080c11;"></i></a> İstifadəçi məlumatlarını yükləmək,<br>
+<a href=<i class="fa-solid fa-circle" style="color: #080c11;"></i></a> Serverdən ən son yeniləmələri almaq,… və s. nəzərdə tutulur …Və bütün bunlar səhifəni yenidən yükləmədən!
+
+Sadə dillə desək, Fetch API vebsaytdan məlumat əldə etməyi və brauzerinizdə  həmin məlumatlarla hansısa işi görməyi asanlaşdırır. Məsələn, siz veb saytdan HTML sənədini tələb etmək üçün Fetch API-dən istifadə edə bilərsiniz.
+<br><br>
+Əsas sintaksis belədir:
+<div class="box">let promise = <span>fetch</span>(url, [options])</div>
+<div>Url – daxil olmaq üçün adres.<br>
+    Seçimlər(options) – istəyə bağlı parametrlər: metod, başlıqlar və s.
+    </div>
+<br><br>
+<div>
+    <div> <h1>Fetch Method</h1></div>
+    Fetch Method : JavaScript-də fetch() metodu serverdən məlumat tələb etmək üçün istifadə olunur. Sorğu JSON və ya XML-də məlumatları qaytaran istənilən API növü ola bilər. fetch() metodu bir parametr tələb edir, sorğu üçün URL və vəd qaytarır.</div>
+<div class="box2">  const <span>fetchDta</span> = () => {<br>
+    return fetch("https://api.example.com/users")<br>
+          .then((response) => response.json())<br>
+          .then((data) => setUser(data));
+  }</div>
+  <br><br>
+  <div>
+    <div> <h1>Axios nədir?</h1></div>
+Axios üçüncü tərəf JavaScript kitabxanasıdır. Axios brauzerdə həm Node.js, həm də JavaScript-i dəstəkləyir. Axios, HTTP sorğularını göndərmək üçün istifadə edilən vəd(promise) edilmiş  JavaScript kitabxanasıdır. Bunu JavaScript-in dogma(native) fetch() funksiyasına alternativ kimi düşünə bilərsiniz. Bu sorğuların verilməsi və cavabların idarə edilməsi prosesini asanlaşdırır. O, həmçinin  avtomatik JSON təhlili kimi xüsusiyyətləri təmin edir.
+
+<div class="box3">
+import axios from 'axios';<br>
+async function fetchData() {<br>
+    try {<br>
+      const response = await axios.get("https://api.example.com/users")<br>
+      setUser(response.data)<br>
+    } catch (error) {<br>
+      console.error(error);<br>
+    }
+  }
+</div>
+  </div>
+  <br><br>
+  <div> <h1>Fetch və ya Axios ilə Async/Await</h1></div>
+
+  Fetch və ya Axios ilə Async/Await: Siz asinxron əməliyyatlarla işləyərkən kodunuzu daha oxunaqlı etmək üçün müasir async/await sintaksisindən
+   istifadə edə bilərsiniz. Bu, həm Fetch API, həm də Axios ilə edilə bilər.
+   <div class="box4">
+    
+    import axios from 'axios';<br>
+    async function fetchData() {<br>
+        try {<br>
+          const response = await axios.get("https://api.example.com/users")<br>
+          setUser(response.data)<br>
+        } catch (error) {<br>
+          console.error(error);<br>
+        }
+      }
+   </div>
+   <br><br>
+   <div> <h1> React’s useEffect Hook</h1></div>
+   React’s useEffect Hook: UseEffect Hook bizə məlumatların əldə edilməsinin nə vaxt baş verəcəyinə nəzarət etməyə imkan verir, hər renderdə lazımsız təkrar əldə edilməsinin qarşısını alır. useEffect bir Hookdur, ona görə də siz
+    onu yalnız komponentinizin və ya öz Hooklarınızın ən yüksək səviyyəsində çağıra bilərsiniz.
+    <div class="box5">
+      import { useEffect, useState } from "react";<br>
+import axios from "axios";<br>
+
+const useFetch = (method, url, body) => {<br>
+  const [isLoading, setIsLoading] = useState(false);<br>
+  const [apiData, setApiData] = useState([]);<br>
+  const [apiError, setApiError] = useState('');<br>
+
+  useEffect(() => {<br>
+    setIsLoading(true);<br>
+    const fetchData = async () => {<br>
+      try {<br>
+        const response = await axios({<br>
+          method: method,<br>
+          url: url,<br>
+          data: body<br>
+        });
+    </div>
+    <br><br>
+    <div> <h1> React’s useState Hook</h1></div>
+    useState, funksional komponentə vəziyyət əlavə etməyə imkan verən React Hook-dur. O, iki dəyəri olan
+     massivi qaytarır:dəyəri və onu yeniləmək üçün funksiya. Hook arqument kimi ilkin vəziyyət
+      dəyərini alır və təyinedici 
+    funksiyası çağırıldıqda yenilənmiş vəziyyət dəyərini qaytarır. React-də useState istənilən növ dəyəri saxlaya bilər.
+     Buraya string, number və Boolean kimi primitiv məlumat növləri, həmçinin massiv, obyekt və funksiya kimi mürəkkəb məlumat
+      növləri daxildir. Əsasən, JavaScript dəyişənində saxlanıla bilən 
+    hər şey useState tərəfindən idarə olunan vəziyyətdə saxlanıla bilər.
+    <div class="box6">
+      const [state, setState] = useState(initialValue);
+    </div>
+    <div class="box7">
+      // Objects<br>
+const [state, setState] = useState({ name: 'John', age: 30 });<br>
+<br>
+const updateName = () => {<br>
+  setState({ ...state, name: 'Jane' });<br>
+};<br>
+
+const updateAge = () => {<br>
+  setState({ ...state, age: state.age + 1 });<br>
+};<br>
+
+// Arrays<br>
+const [array, setArray] = useState([1, 2, 3, 4, 5]);<br>
+
+const addItem = () => {<br>
+  setArray([...array, 6]);<br>
+};<br>
+
+const removeItem = () => {<br>
+  setArray(array.slice(0, array.length - 1));<br>
+};<br>
+    </div>
+
+    
+</h3>
+
+
+
+
+
+
+</article>
+
+
+
+
+    </section>
+</body>
+</html>
