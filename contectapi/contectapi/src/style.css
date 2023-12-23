@@ -1,0 +1,24 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-color: blueviolet;
+    padding: 20px;
+    font-size: 30px;
+}
+button{
+    padding: 20px;
+    margin: 10px;
+}
+.dark,
+.dark *{
+    background-color: black;
+    color: wheat;
+}
+
+.light,
+.light *{
+    background-color: white;
+    color: black;
+}
