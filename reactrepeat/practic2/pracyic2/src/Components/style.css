@@ -1,0 +1,11 @@
+#root{
+    text-align: center;
+}
+h2,button{
+    font-size: 40px;
+}
+button{
+    border: none;
+    background-color: rgb(102, 198, 102);
+    margin: 0 20px;
+}
