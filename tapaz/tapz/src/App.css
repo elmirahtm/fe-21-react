@@ -1,0 +1,51 @@
+#root{
+  text-align: center;
+}
+body{
+  background-color: rgb(229, 224, 224);
+}
+.header{
+  color: red;
+}
+.container{
+  display: flex;
+  justify-content: space-around;
+  color: blue;
+  border: 2px solid white;
+  background-color: white;
+  margin: 0 30px;
+  padding: 10px;
+}
+.divv{
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.div{
+  border: 2px solid white;
+  padding: 20px;
+  margin: 20px 0;
+}
+.img{
+  width: 300px;
+  height: 300px;
+  
+}
+
+.ptag{
+  font-size: 30px;
+}
+.btninput{
+  margin-bottom: 10px;
+  padding: 20px;
+}
+input,button{
+height: 30px;
+margin: 10px;
+outline: none;
+
+}
+input:hover{
+  border: solid yellow;
+  box-shadow: 0 0 10px 5px yellow;
+}

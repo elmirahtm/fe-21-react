@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+
+      "id":1,
+      "img":"https://d2ivfcfbdvj3sm.cloudfront.net/7fc965ab77efe6e0fa62e4ca1ea7673bb65a4859031e3d8e88cb10/stills_0640_png/MY2022/50988/50988_st0640_116.png",
+      "qiymet":"53 000AZN",
+      "name":"Toyota Sienna, 2017 il"
+
+    },
+    {
+
+      "id":2,
+      "img":"https://www.motortrend.com/uploads/sites/10/2019/08/2019-bmw-5-series-540i-m-sport-design-rwd-sedan-angular-front.png?fit=around%7C875:492.1875",
+      "qiymet":"56 000AZN",
+      "name":"BMW 530, 2007 il"
+
+    },
+    {
+
+      "id":3,
+      "img":"https://eldoradorent.az/images/stories/virtuemart/product/kia-rio-2015.png",
+      "qiymet":"8 000AZN",
+      "name":"KIA Rio, 2010 il"
+
+    },
+    {
+
+      "id":4,
+      "img":"https://platform.cstatic-images.com/xlarge/in/v2/stock_photos/f74d2b20-73ed-4763-877e-bf41e2ea4fc4/427cfaf2-48b4-45b9-b889-1c53d07d9c75.png",
+      "qiymet":"6 000AZN",
+      "name":"BMW 525, 1991 il"
+
+    }
+  ]
+}
