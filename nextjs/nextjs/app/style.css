@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+header{
+    background-color: black;
+}
+header a{
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    transition: all 0.5s;
+}
+header a:hover{
+    background-color: red;
+}
+.active{
+    background-color: red;
+}
+footer{
+    background-color: black;
+    color: red;
+    padding: 40px;
+    text-align: center;
+}

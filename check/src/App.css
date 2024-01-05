@@ -1,0 +1,17 @@
+.divv{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: 20px;
+}
+.divsome{
+  border: 2px solid chartreuse ;
+  transform: translateY(200px);
+  padding: 20px;
+}
+.divsome:hover{
+  background-color: chartreuse;
+  transition: all 1s ease-in-out;
+  box-shadow: 0 0 30px  chartreuse;
+}

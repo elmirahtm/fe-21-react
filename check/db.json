@@ -1,0 +1,20 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "username": "json-server",
+      "email": "typicode"
+    },
+    {
+      "id": 2,
+      "username": "json-server",
+      "email": "typicode"
+    },
+    {
+      "username": "kvsnkszl",
+      "email": "lkvsnslk",
+      "password": "svknslv",
+      "id": 3
+    }
+  ]
+}
