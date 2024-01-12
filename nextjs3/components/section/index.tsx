@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 import React from 'react'
 
 const Section = () => {
@@ -20,11 +21,15 @@ that it has a more-or-less normal.</p>
     <span><h5>012345678</h5></span>
 </div>
 <div>
-    <button>Get Free Estimate 
+<Link href="/">
+<button>
+        Get Free Estimate 
         <span>
         <Image src="Vector2.svg" alt='uib' width={20} height={13}/>
         </span> 
+
         </button>
+</Link>
 </div>
 </aside>
 
@@ -41,7 +46,7 @@ that it has a more-or-less normal.</p>
 <div className="qutu2">
     <div className='sekil'><Image  src="./natasha.svg" alt='c' width={40} height={50}/>
     <h6>Nattasha Mith</h6>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia accusamus porro ad maxime. Repellendus.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate, accusamus voluptate repudiandae laboriosam error eal</p>
 </div>
 </div>
 <div className="qutu3">

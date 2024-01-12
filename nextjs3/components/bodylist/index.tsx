@@ -5,11 +5,11 @@ const Bodylist = () => {
 
   return (
 <div>
-<div className='body'>
+{/* <div className='body'>
         <Image src="./Banner .svg" alt='banner' width={1920} height={710}/>
         
-    </div>
-  <div className='boxes'>
+    </div> */}
+  {/* <div className='boxes'>
   <div className="box">
 
            
@@ -33,7 +33,7 @@ const Bodylist = () => {
         </div>
 
   </div>
-    
+     */}
     
 </div>
   )

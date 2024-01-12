@@ -47,12 +47,23 @@ width: 300px;
  text-align: center;
 }
 .boxes{
-    display: flex;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
+    display: inline-block;
+    position: relative;
+    left:270px;
     
 }
 .box h4{
     margin: 10px;
+}
+.h4span{
+    display: flex;
+    justify-content: center;
+    
+}
+.h4span span{
+    margin-top: 10px;
 }
 aside{
     margin: 40px;
@@ -86,6 +97,8 @@ aside button{
     color: white;
     border-radius: 10px ;
     padding: 14px;
+    margin-top: 10px;
+    margin-left: 8px;
 }
 .qutu{
     width: 800px;
@@ -138,13 +151,91 @@ gap: 40px;
 .qutu4 p{
 padding: 10px;
 }
+
 .qutu2 p{
-    padding: 3px;
-    margin-left: -10px
+    margin-left: -20px;
+    margin-top: -20px;
+    padding: 15px;
 }
 .icon{
     display: flex;
     justify-content: center;
     padding: 40px;
     gap: 90px;
+}
+.heading2,.news{
+   margin: 0 auto;
+   text-align: center;
+    width: 60ch;
+}
+.altyazi{
+    display: flex;
+    justify-content: first baseline;
+    gap: 140px;
+}
+.logopicture,.logopicture2{
+    display: flex;
+    justify-content: space-evenly;
+margin:  0 170px;
+}
+.square{
+    max-width: 1200px;
+    height: 300px;
+    background-color: rgb(234, 234, 224);
+margin: 70px auto;
+}
+.count{
+ text-align: center;
+}
+.newscopy{
+    display: flex;
+    justify-content: center;
+    margin: 0 150px;
+}
+.circle{
+    max-width: 1300px;
+    height: 300px;
+    background-color: rgba(41, 47, 54, 1);
+    border-radius: 30px;
+    margin: 70px auto;
+}
+.altyazi2{
+    color: white;
+    text-align: center;
+    transform: translateY(70px);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.altyazi2 button{
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(199, 116, 27);
+    border: none;
+}
+h1,p,button{
+    padding: 10px;
+}
+.css{
+    margin: 20px 40px;
+}
+.css2,.css3{
+    text-align: center;
+}
+.css4 p{
+    margin-left: -8px;
+}
+.css p{
+    width: 30ch;
+    margin-left: -9px;
+}
+.com{
+display: flex;
+justify-content: space-evenly;
+}
+.css,.css2,.css3,.css4{
+    margin: 0 10px;
+}
+.ptag{
+    text-align: center;
+margin: 50px 0;
 }
